@@ -1,0 +1,17 @@
+{
+  "shop": {
+    "currency": "INR",
+    "language": "en",
+    "weightUnit": "kg"
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "product_review",
+        "resolve": "node_modules/@evershop/product_review",
+        "enabled": true,
+        "priority": 10
+      }
+    ]
+  }
+}

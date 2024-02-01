@@ -1,5 +1,5 @@
 :root {
-  --primary: #7d0049;
+  --primary: #a005a6;
   --secondary: #111213;
   --surface: #111213;
   --onSurface: #111213;
@@ -54,7 +54,7 @@ html {
   }
 }
 body {
-  color: #000000;
+  color: #3a3a3a;
 }
 p {
   margin-bottom: 1rem;
@@ -180,10 +180,8 @@ h6 {
   min-height: calc(100vh - 50px);
 }
 .header {
-  color: white;
-  background-color: #7d0049;
-  padding: 2.5rem;
-  border-bottom: 1px solid #dcdada;
+  padding: 2.5rem !important;
+  border-bottom: 1px solid #ebebeb;
   margin-bottom: 3rem;
   @media only screen and (min-width: 1200px) {
     padding-left: 50px;
@@ -204,11 +202,11 @@ h6 {
 }
 
 .footer {
-  background-color: #7d0049;
+  background-color: #f6f6f6;
   margin-top: 9rem;
   padding-top: 1rem;
   padding-block-end: 1rem;
-  border-bottom: 1px solid #dcdada;
+  border-top: 1px solid #ddd;
   .card-icons {
     svg {
       height: 4rem;

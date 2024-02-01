@@ -1,0 +1,36 @@
+{
+  "shop": {
+    "currency": "INR",
+    "language": "en",
+    "weightUnit": "kg",
+    "homeUrl": "http://localhost:3000"
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "product_review",
+        "resolve": "node_modules/@evershop/product_review",
+        "enabled": true,
+        "priority": 10
+      }
+    ]
+  },
+  "pricing": {
+    "rounding": "round",
+    "precision": 2
+  },
+  "themeConfig": {
+    "logo": {
+        "alt": "You amazing shop logo",
+        "src": "/logo.png",
+        "width": 30,
+        "height": 30
+    },
+    "headTags": {
+        "links": [],
+        "metas": [],
+        "scripts": []
+    },
+    "copyright": "© 2024 AyrusShop. All Rights Reserved."
+  }
+}

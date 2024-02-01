@@ -124,5 +124,8 @@
     "winston": "^3.3.3",
     "yargs": "^16.2.0",
     "zero-decimal-currencies": "^1.2.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
   }
 }
