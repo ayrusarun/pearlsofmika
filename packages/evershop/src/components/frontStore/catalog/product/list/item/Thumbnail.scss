@@ -6,4 +6,15 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  overflow: hidden; /* Hide overflow to prevent zooming beyond the container */
+}
+
+.product-thumbnail-listing img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s ease-in-out; /* Add a smooth transition for the zoom effect */
+}
+
+.product-thumbnail-listing:hover img {
+  transform: scale(1.1); /* Zoom in by 10% on hover */
 }

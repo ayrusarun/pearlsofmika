@@ -22,9 +22,9 @@
   "themeConfig": {
     "logo": {
         "alt": "You amazing shop logo",
-        "src": "/logo.png",
-        "width": 30,
-        "height": 30
+        "src": "/logo-kt.png",
+        "width": 50,
+        "height": 50
     },
     "headTags": {
         "links": [],
