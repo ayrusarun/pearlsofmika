@@ -27,7 +27,12 @@
         "height": 50
     },
     "headTags": {
-        "links": [],
+      "links": [
+                {
+                    "rel": "icon",
+                    "href": "/favicon.ico"
+                }
+                  ],
         "metas": [],
         "scripts": []
     },

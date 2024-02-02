@@ -185,6 +185,9 @@ h6 {
   padding: 2.5rem;
   border-bottom: 1px solid #dcdada;
   margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   @media only screen and (min-width: 1200px) {
     padding-left: 50px;
     padding-right: 50px;
