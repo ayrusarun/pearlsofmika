@@ -2,7 +2,6 @@ import React from 'react';
 import { _ } from '@evershop/evershop/src/lib/locale/translate';
 import './MainBanner.scss';
 import CategoriesList from './CategoriesList'; 
-import Policy from './policy';
 
 export default function MainBanner() {
   const text = _('Discount ${discount} For All Orders Over ${price}', {
