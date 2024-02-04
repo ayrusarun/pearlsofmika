@@ -4,7 +4,9 @@ import LoadingBar from '@components/common/LoadingBar';
 import './Layout.scss';
 import './tailwind.scss';
 
+
 export default function Layout() {
+
   return (
     <>
       <LoadingBar />

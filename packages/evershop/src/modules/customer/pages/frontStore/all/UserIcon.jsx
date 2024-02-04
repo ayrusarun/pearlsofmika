@@ -6,7 +6,7 @@ export default function UserIcon({ customer, accountUrl, loginUrl }) {
   const iconStyles = {
     stroke: '#ffffff', // Replace with your desired stroke color
     width: 25,
-    height: 25,
+    height: 25
   };
 
 

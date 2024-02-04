@@ -6,46 +6,47 @@ export default function FeaturedCategories() {
     <div className="mt-15">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 page-width">
         <div>
+          <h3 className="h4 uppercase mt-1 mb-1">Krystal Collections</h3>
           <div className="text-center">
-            <img src="/assets/homepage/banner/men-shoes.jpeg" alt="" />
+            <a href="/krystals"> 
+              <img src="./FeaturedCategories/krystals.jpg" alt="" style={{ borderRadius: '1px' }} />
+            </a>
           </div>
-          <h3 className="h4 uppercase mt-1 mb-1">Men shoes collection</h3>
+          <div className="mb-1">
+           <p>
+              <b>Unearth the Magic:</b> Discover the world of crystals and unlock their mystical properties.
+          </p>
+          </div>
+          <Button url="/krystals" title="Shop Krystals" variant="primary" />
+        </div>
+
+        <div>
+          <h3 className="h4 uppercase mt-1 mb-1">18k Gold Collections</h3>
+          <div>
+            <a href="/18k"> 
+              <img src="./FeaturedCategories/18k.jpg" alt="" style={{ borderRadius: '1px' }} />
+            </a>
+          </div>
           <div className="mb-1">
             <p>
-              Constructed from luxury nylons, leathers, and custom hardware,
-              featuring sport details such as hidden breathing vents, waterproof
-              + antimicrobial linings, and more.
+              <b>Luxury Redefined:</b> Experience luxury redefined with our exquisite 18k gold-plated creations.
             </p>
           </div>
-          <Button url="/kids" title="Shop kids" variant="primary" />
+          <Button url="/18k" title="Shop 18K Gold" variant="primary" />
         </div>
         <div>
+          <h3 className="h4 uppercase mt-1 mb-1">915 Sterling Silver</h3>
           <div>
-            <img src="/assets/homepage/banner/women-shoes.jpeg" alt="" />
+            <a href="/silver">
+              <img src="./FeaturedCategories/silver.jpg" alt="" style={{ borderRadius: '1px' }} />
+            </a>
           </div>
-          <h3 className="h4 uppercase mt-1 mb-1">Women shoes collection</h3>
           <div className="mb-1">
             <p>
-              Constructed from luxury nylons, leathers, and custom hardware,
-              featuring sport details such as hidden breathing vents, waterproof
-              + antimicrobial linings, and more.
+              <b>Radiant Purity:</b> Adorn yourself in the radiant purity of 916 sterling silver brilliance.
             </p>
           </div>
-          <Button url="/women" title="Shop women" variant="primary" />
-        </div>
-        <div>
-          <div>
-            <img src="/assets/homepage/banner/kid-shoes.jpeg" alt="" />
-          </div>
-          <h3 className="h4 uppercase mt-1 mb-1">Men shoes collection</h3>
-          <div className="mb-1">
-            <p>
-              Constructed from luxury nylons, leathers, and custom hardware,
-              featuring sport details such as hidden breathing vents, waterproof
-              + antimicrobial linings, and more.
-            </p>
-          </div>
-          <Button url="/men" title="Shop men" variant="primary" />
+          <Button url="/silver" title="Shop 916 Silver" variant="primary" />
         </div>
       </div>
     </div>

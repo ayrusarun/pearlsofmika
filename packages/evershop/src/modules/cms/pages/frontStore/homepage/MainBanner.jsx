@@ -2,6 +2,7 @@ import React from 'react';
 import { _ } from '@evershop/evershop/src/lib/locale/translate';
 import './MainBanner.scss';
 import CategoriesList from './CategoriesList'; 
+import Policy from './policy';
 
 export default function MainBanner() {
   const text = _('Discount ${discount} For All Orders Over ${price}', {
@@ -17,8 +18,7 @@ export default function MainBanner() {
           <source src="/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="overlay absolute top-0 left-0 bottom-0 right-0 block bg-gray-700 opacity-35 z-1"></div>
-
+        <div className="overlay absolute top-0 left-0 bottom-0 right-0 block bg-gray-700 opacity-35 z-1" />
 
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-2">
           <div />

@@ -1,0 +1,41 @@
+.policies-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.policy-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.policy-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Adjust the spacing between categories */
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.policy-image {
+  width: 60px; /* Adjust the size of the circular image */
+  height: 60px; /* Adjust the size of the circular image */
+  border-radius: 50%;
+  margin-bottom: 8px; /* Adjust the spacing between the image and text */
+}
+
+.policy-name {
+  color: var(--primary);
+  font-size: 14px; /* Adjust the font size of the category name */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
