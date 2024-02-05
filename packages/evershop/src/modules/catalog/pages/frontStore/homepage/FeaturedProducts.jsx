@@ -59,7 +59,7 @@ export const query = `
     collection (code: "homepage") {
       collectionId
       name
-      products (filters: [{key: "limit", operation: "=", value: "4"}]) {
+      products (filters: [{key: "limit", operation: "=", value: "20"}]) {
         items {
           productId
           name

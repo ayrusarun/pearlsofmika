@@ -3,7 +3,7 @@ import React from 'react';
 import Icon from '@heroicons/react/outline/UserIcon';
 
 export default function UserIcon({ customer, accountUrl, loginUrl }) {
-  const iconStyles = {
+const iconStyles = {
     stroke: '#ffffff', // Replace with your desired stroke color
     width: 25,
     height: 25

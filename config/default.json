@@ -2,7 +2,8 @@
   "shop": {
     "currency": "INR",
     "language": "en",
-    "weightUnit": "kg"
+    "weightUnit": "kg",
+    "homeUrl": "http://localhost:3000"
   },
   "system": {
     "extensions": [
@@ -13,5 +14,28 @@
         "priority": 10
       }
     ]
+  },
+  "pricing": {
+    "rounding": "round",
+    "precision": 2
+  },
+  "themeConfig": {
+    "logo": {
+        "alt": "You amazing shop logo",
+        "src": "/logo-kt.png",
+        "width": 50,
+        "height": 50
+    },
+    "headTags": {
+      "links": [
+                {
+                    "rel": "icon",
+                    "href": "/favicon.ico"
+                }
+                  ],
+        "metas": [],
+        "scripts": []
+    },
+    "copyright": "© 2024 AyrusShop. All Rights Reserved."
   }
 }
