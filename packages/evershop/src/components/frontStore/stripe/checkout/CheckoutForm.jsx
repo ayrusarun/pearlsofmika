@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
-import { CardElement, useStripe, useElements, PaymentRequestButtonElement } from '@stripe/react-stripe-js';
+import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { useQuery } from 'urql';
 import { useCheckout } from '@components/common/context/checkout';
 import './CheckoutForm.scss';
@@ -69,14 +69,12 @@ const cardStyle = {
 };
 
 export default function CheckoutForm({ stripePublishableKey }) {
-
   const [, setSucceeded] = useState(false);
   const [cardComleted, setCardCompleted] = useState(false);
   const [error, setError] = useState(null);
   const [, setDisabled] = useState(true);
   const [clientSecret, setClientSecret] = useState('');
   const [showTestCard, setShowTestCard] = useState('success');
-  const [paymentRequest, setPaymentRequest] = useState(null);
   const stripe = useStripe();
   const elements = useElements();
   const { cartId, orderId, orderPlaced, paymentMethods, checkoutSuccessUrl } =
@@ -89,34 +87,6 @@ export default function CheckoutForm({ stripePublishableKey }) {
     },
     pause: orderPlaced === true
   });
-
-  useEffect(() => {
-    if (stripe) {
-      const pr = stripe.paymentRequest({
-        country: 'US',
-        currency: 'usd',
-        total: {
-          label: 'Demo total',
-          amount: 1099,
-        },
-        requestPayerName: true,
-        requestPayerEmail: true,
-      });
-
-      // Check the availability of the Payment Request API.
-      pr.canMakePayment().then(result => {
-        if (result) {
-          setPaymentRequest(pr);
-        }
-      });
-    }
-  }, [stripe]);
-
-  if (paymentRequest) {
-
-    console.log("No PR found");
-    return <PaymentRequestButtonElement options={{paymentRequest}} />
-  }
 
   useEffect(() => {
     // Create PaymentIntent as soon as the order is placed
