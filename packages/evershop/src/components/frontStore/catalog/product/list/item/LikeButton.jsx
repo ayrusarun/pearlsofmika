@@ -23,7 +23,7 @@ function LikeButton() {
                   fontSize: "30px",
                   backgroundColor: "white",
                   borderRadius: "50%", // Set to 50% for a circular background
-                  padding: "6px", // Adjust padding to increase background size
+                  padding: "6px" // Adjust padding to increase background size
                 }} />}
             checkedIcon={<FavoriteIcon 
                style={{
@@ -31,12 +31,12 @@ function LikeButton() {
                fontSize: "30px",
                backgroundColor: "white",
                borderRadius: "50%", // Set to 50% for a circular background
-               padding: "6px", // Adjust padding to increase background size
+               padding: "6px" // Adjust padding to increase background size
              }} />}
             sx={{
                "&.Mui-checked": {
-                 color: "#7d0049", // Customize the background color when checked
-               },
+                 color: "#7d0049" // Customize the background color when checked
+               }
              }}
           />
         }  
