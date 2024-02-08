@@ -5,6 +5,7 @@ import './GoogleLogin.scss';
 
 function GoogleIcon({ width, height }) {
   return (
+    <div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="LgbsSe-Bz112c"
@@ -30,6 +31,7 @@ function GoogleIcon({ width, height }) {
       />
       <path fill="none" d="M0 0h48v48H0z" />
     </svg>
+    </div>
   );
 }
 

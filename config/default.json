@@ -12,6 +12,12 @@
         "resolve": "node_modules/@evershop/product_review",
         "enabled": true,
         "priority": 10
+      },
+      {
+        "name": "google_login",
+        "resolve": "node_modules/@evershop/google_login",
+        "enabled": true,
+        "priority": 10
       }
     ]
   },
@@ -37,5 +43,11 @@
         "scripts": []
     },
     "copyright": "© 2024 AyrusShop. All Rights Reserved."
+  },
+  "google_login": {
+    "client_id": "456482901778-obegr9i481s1blkhtbop8vsoe8vbtkgb.apps.googleusercontent.com",
+    "client_secret": "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",
+    "success_redirect_url": "https://www.krystaltouch.in",
+    "failure_redirect_url": "https://www.krystaltouch.in/account/login"
   }
 }
