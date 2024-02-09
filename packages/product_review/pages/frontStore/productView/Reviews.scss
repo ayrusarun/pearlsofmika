@@ -1,5 +1,6 @@
 
 .review__list  {
+  margin-top: 10px;
   margin-bottom: 20px;
   li {
     padding: 10px 0;
@@ -20,4 +21,36 @@
 .rating__stars {
   display: flex;
   justify-self: start;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.rating-text {
+  margin-left: 8px; /* Adjust margin as needed */
+}
+
+.rating {
+  display: flex;
+  justify-self: start;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+/* Optional: add margin between name and stars */
+.rating-stars {
+  margin-left: 8px; /* Adjust margin as needed */
+}
+
+.product__reviews {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.styled-button {
+  color: var(--primary);
 }

@@ -1,35 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Reviews.scss';
 import { _ } from '@evershop/evershop/src/lib/locale/translate';
 import Rating from '../../../components/Rating';
 
 export default function Reviews({ product: { reviews = [] } }) {
+  const [expanded, setExpanded] = useState(false);
+  const [visibleReviews, setVisibleReviews] = useState(reviews.slice(0, 2));
+
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+    if (!expanded) {
+      setVisibleReviews(reviews);
+    } else {
+      setVisibleReviews(reviews.slice(0, 2));
+    }
+  };
+
+  const formatDate = (timestamp) => {
+    const date = new Date(parseInt(timestamp)); // Convert timestamp to integer
+    if (isNaN(date.getTime())) {
+      // Invalid timestamp, return a placeholder or handle as needed
+      return ' ';
+    }
+    // Use toLocaleDateString() to format the date in DD/MM/YYYY format
+    return date.toLocaleDateString('en-IN', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
+  };
+  
+  
+
+  const totalReviews = reviews.length;
+  const averageRating =
+    totalReviews > 0
+      ? reviews.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews
+      : 0;
+
   return (
-    <div id="product__reviews" className="mt-2">
-      <h3>{_('Customer Reviews')}</h3>
-      <ul className="review__list">
-        {reviews.length === 0 && (
-          <li className="flex flex-col gap-1">
-            {_('Be the first to review this product')}
-          </li>
-        )}
-        {reviews.map((review) => (
-          <li key={review.uuid} className="flex flex-col gap-1">
+    <div id="product__reviews" className="product__reviews">
+      <div className="rating-container">
+        <span style={{ marginRight: '5px', fontWeight: 'bold' }}>
+            Customer reviews: 
+        </span>   
+        <Rating rating={averageRating} />
+        <span className="rating-text">
+          {`${averageRating.toFixed(1)} (${totalReviews} ${_('reviews')})`}
+        </span>
+      </div>
+
+      <ul className={`review__list ${expanded ? 'expanded' : ''}`}>
+        {visibleReviews.map((review, index) => (
+          <li key={`${review.uuid}-${index}`} className="flex flex-col gap-1">
             <div className="rating">
-              <Rating rating={review.rating} />
-            </div>
-            <p className="comment">{review.comment}</p>
-            <div>
-              <span>
-                {_('Review by ${customer_name}', {
+              <span className="customer-name">
+                {_('${customer_name}', {
                   customer_name: review.customerName
                 })}
               </span>
+              <img src="/verified-icon.svg" alt="" style={{ marginLeft: '5px', height: '15px', width: '15px', marginTop: '3px'}} />
+              <span className="rating-stars">
+                <Rating rating={review.rating} />
+              </span>
             </div>
+            <p className="commentDate" style={{ fontStyle: 'italic', fontSize: '12px' , color: 'grey' }}>
+              {formatDate(review.createdAt)}
+            </p>
+            <p className="comment">{review.comment}</p>
           </li>
         ))}
       </ul>
+      {totalReviews > 2 && (
+        <button className="expand-button styled-button" onClick={toggleExpand}>
+          {expanded ? _('Collapse') : _('View More Reviews')}
+        </button>
+      )}
     </div>
   );
 }
@@ -47,9 +94,10 @@ Reviews.propTypes = {
   }).isRequired
 };
 
+
 export const layout = {
-  areaId: 'productPageMiddleLeft',
-  sortOrder: 45
+  areaId: 'productPageMiddleRight',
+  sortOrder: 55
 };
 
 export const query = `

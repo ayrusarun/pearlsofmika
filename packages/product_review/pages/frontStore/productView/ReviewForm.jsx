@@ -55,7 +55,7 @@ export default function ReviewForm({ action, product }) {
                   <StartIcon
                     width={20}
                     height={20}
-                    fill={rating > i ? '#ff5501' : '#989898'}
+                    fill={rating > i ? '#7d0049' : '#989898'}
                   />
                 </a>
               ))}
@@ -94,8 +94,8 @@ ReviewForm.propTypes = {
 };
 
 export const layout = {
-  areaId: 'productPageMiddleLeft',
-  sortOrder: 50
+  areaId: 'productPageMiddleRight',
+  sortOrder: 60
 };
 
 export const query = `
