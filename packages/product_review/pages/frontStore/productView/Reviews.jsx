@@ -45,10 +45,6 @@ export default function Reviews({ product: { reviews = [] } }) {
         <span style={{ marginRight: '5px', fontWeight: 'bold' }}>
             Customer reviews: 
         </span>   
-        <Rating rating={averageRating} />
-        <span className="rating-text">
-          {`${averageRating.toFixed(1)} (${totalReviews} ${_('reviews')})`}
-        </span>
       </div>
 
       <ul className={`review__list ${expanded ? 'expanded' : ''}`}>

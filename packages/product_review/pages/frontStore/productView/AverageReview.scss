@@ -1,0 +1,29 @@
+.rating__stars {
+  display: flex;
+  justify-self: start;
+}
+
+.avg-rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rating-text {
+  margin-left: 8px; /* Adjust margin as needed */
+}
+
+.rating {
+  display: flex;
+  justify-self: start;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+/* Optional: add margin between name and stars */
+.rating-stars {
+  margin-left: 8px; /* Adjust margin as needed */
+}
+
