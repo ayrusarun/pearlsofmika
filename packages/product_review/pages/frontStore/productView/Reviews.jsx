@@ -18,8 +18,8 @@ export default function Reviews({ product: { reviews = [] } }) {
   };
 
   const formatDate = (timestamp) => {
-    const date = new Date(parseInt(timestamp)); // Convert timestamp to integer
-    if (isNaN(date.getTime())) {
+    const date = new Date(parseInt(timestamp, 10)); // Convert timestamp to integer
+    if (Number.isNaN(date.getTime())) {
       // Invalid timestamp, return a placeholder or handle as needed
       return ' ';
     }
@@ -27,17 +27,13 @@ export default function Reviews({ product: { reviews = [] } }) {
     return date.toLocaleDateString('en-IN', {
       day: '2-digit',
       month: '2-digit',
-      year: 'numeric',
+      year: 'numeric'
     });
   };
   
   
 
   const totalReviews = reviews.length;
-  const averageRating =
-    totalReviews > 0
-      ? reviews.reduce((acc, curr) => acc + curr.rating, 0) / totalReviews
-      : 0;
 
   return (
     <div id="product__reviews" className="product__reviews">
@@ -69,7 +65,7 @@ export default function Reviews({ product: { reviews = [] } }) {
         ))}
       </ul>
       {totalReviews > 2 && (
-        <button className="expand-button styled-button" onClick={toggleExpand}>
+        <button type="button" className="expand-button styled-button" onClick={toggleExpand}>
           {expanded ? _('Collapse') : _('View More Reviews')}
         </button>
       )}

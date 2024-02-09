@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './AverageReview.scss';
 import { _ } from '@evershop/evershop/src/lib/locale/translate';
 import Rating from '../../../components/Rating';
 
 export default function Reviews({ product: { reviews = [] } }) {
-  const [expanded, setExpanded] = useState(false);
-  const [visibleReviews, setVisibleReviews] = useState(reviews.slice(0, 2));
 
   const totalReviews = reviews.length;
   const averageRating =
