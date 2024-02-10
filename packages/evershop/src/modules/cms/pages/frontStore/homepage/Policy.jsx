@@ -14,7 +14,7 @@ export default function Policy() {
 
   return (
     <div className="policies-list">
-      <h3 className="h3 mt-1 mb-1 text-center font-bold">Why Choose KrystalTouch?</h3>
+      <h3 className="h5 mt-1 text-center ">WHY CHOOSE KRYSTALTOUCH?</h3>
       <ul className="policy-list">
         {policies.map((policy, index) => (
           <li key={index}>
