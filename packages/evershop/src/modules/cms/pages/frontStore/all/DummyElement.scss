@@ -1,0 +1,10 @@
+.dummy {
+  display: block; /* Ensure element is visible by default */
+}
+
+@media (min-width: 768px) {
+  /* Apply styles only on screens wider than 768px (desktop view) */
+  .dummy {
+    display: none; /* Hide the element on desktop view */
+  }
+}
