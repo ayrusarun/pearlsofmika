@@ -1,0 +1,26 @@
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  color: white;
+   
+}
+
+.image-container:hover .overlay {
+  text-decoration: underline; 
+}
