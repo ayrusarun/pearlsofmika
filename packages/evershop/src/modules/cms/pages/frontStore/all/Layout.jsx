@@ -47,7 +47,7 @@ export default function Layout() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa fa-whatsapp whatsapp-icon"></i>
+        <i className="fa fa-whatsapp whatsapp-icon" />
       </a>
     </>
   );
