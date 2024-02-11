@@ -4,10 +4,10 @@ import './CategoriesList.scss'; // You can add styles for the categories list in
 function CategoriesList() {
   // Replace this with your actual list of categories
   const categories = [
-    { name: 'Hot Deals', imageSrc: '/categories/offerzone.gif' },
-    { name: 'Premium Collections', imageSrc: '/categories/premium.gif' },
-    { name: 'Best Seller', imageSrc: '/categories/mostloved.gif' },
-    { name: 'Buy1 Get1', imageSrc: '/categories/buy1free.gif' }
+    { name: 'Hot Deals', imageSrc: '/categories/offerzone.gif' , url : '/hot-deals' },
+    { name: 'Premium Collections', imageSrc: '/categories/premium.gif',url : '/premium'  },
+    { name: 'Best Seller', imageSrc: '/categories/mostloved.gif',url : '/best-seller'  },
+    { name: 'Buy1 Get1', imageSrc: '/categories/buy1free.gif',url : '/buy1get1'  }
   ];
 
   return (
@@ -17,7 +17,7 @@ function CategoriesList() {
           <li key={index}>
             <div className="category-item ml-3">
               <img src={category.imageSrc} alt={category.name} className="category-image" />
-              <a href="/krystals"> 
+              <a href={category.url}> 
               <p className="category-name">{category.name}</p>
               </a>
             </div>
