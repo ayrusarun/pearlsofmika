@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import './ReviewPopup.scss'; // You may need to create this stylesheet for styling
+import React from 'react';
+import './ReviewPopup.scss'; 
+import PropTypes from 'prop-types';
 
 export default function ReviewPopup({ onClose }) {
-  const [rating, setRating] = useState(0);
-
-  const handleRatingChange = (value) => {
-    setRating(value);
-  };
 
   const handleSubmit = () => {
     // Submit rating (send to backend, etc.)
@@ -18,8 +14,6 @@ export default function ReviewPopup({ onClose }) {
       <div className="review-popup-content">
             <h5> # Thankyou !!</h5>
             <h6> Please rate your shopping experience</h6>
-
-
             <div className="container">
               <div className="item">
                 <label htmlFor="0">
@@ -57,10 +51,10 @@ export default function ReviewPopup({ onClose }) {
               </div>
             </div>  
           <div className='button1'>    
-            <button className="submit-btn" onClick={handleSubmit}>
+            <button type="button" className="submit-btn" onClick={handleSubmit}>
               Submit
             </button>
-            <button className="close-btn" onClick={onClose}>
+            <button type="button"  className="close-btn" onClick={onClose}>
               Close
             </button>
           </div> 
@@ -69,3 +63,8 @@ export default function ReviewPopup({ onClose }) {
     </div>
   );
 }
+
+
+ReviewPopup.propTypes = {
+  onClose: PropTypes.func.isRequired
+};
