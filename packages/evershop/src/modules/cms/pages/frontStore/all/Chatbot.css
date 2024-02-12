@@ -1,0 +1,71 @@
+/* AI chatbot button styles */
+.chatbot-container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+}
+
+.chatbot-iframe-container {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+.chatbot-iframe-container.visible {
+  display: block;
+}
+
+.chatbot-toggle-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10%;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.chatbot-toggle-button:focus {
+  outline: none;
+}
+
+/* Add animation when button is clicked */
+.chatbot-toggle-button.clicked {
+  transform: scale(1.1);
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
+  /* AI chatbot button styles */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.chatbot-toggle-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10%;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 3px #999;
+}
+}

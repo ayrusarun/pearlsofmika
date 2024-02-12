@@ -3,6 +3,7 @@ import Area from '@components/common/Area';
 import LoadingBar from '@components/common/LoadingBar';
 import './Layout.scss';
 import './tailwind.scss';
+import Chatbot from './Chatbot';
 
 export default function Layout() {
   // Define your message variable
@@ -49,6 +50,9 @@ export default function Layout() {
       >
         <i className="fa fa-whatsapp whatsapp-icon" />
       </a>
+
+      <Chatbot /> 
+       
     </>
   );
 }

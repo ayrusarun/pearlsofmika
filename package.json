@@ -55,6 +55,9 @@
   },
   "dependencies": {
     "@evershop/google_login": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "razorpay": "^2.9.2"
   }
 }
