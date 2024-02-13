@@ -15,7 +15,7 @@ const Chatbot = () => {
 
   return (
     <div className="chatbot-container">
-      <button className={`chatbot-toggle-button ${clicked ? 'clicked' : ''}`} onClick={toggleChatbot}>
+      <button type = "button" className={`chatbot-toggle-button ${clicked ? 'clicked' : ''}`} onClick={toggleChatbot}>
         <FontAwesomeIcon icon={faRobot} />
       </button>
       <div className={`chatbot-iframe-container ${showChatbot ? 'visible' : 'hidden'}`}>
