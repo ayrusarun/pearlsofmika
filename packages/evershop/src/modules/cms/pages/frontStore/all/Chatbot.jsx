@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRobot } from '@fortawesome/free-solid-svg-icons';
 import './Chatbot.css'; // Import CSS file for styling
 
-const Chatbot = () => {
+function Chatbot() {
   const [showChatbot, setShowChatbot] = useState(false);
   const [clicked, setClicked] = useState(false);
 
@@ -24,11 +24,10 @@ const Chatbot = () => {
           allow="microphone;"
           width="350"
           height="430"
-          src="https://console.dialogflow.com/api-client/demo/embedded/e3084c84-8054-43bb-969d-ecedd7228a89">
-        </iframe>
+          src="https://console.dialogflow.com/api-client/demo/embedded/e3084c84-8054-43bb-969d-ecedd7228a89" />
       </div>
     </div>
   );
-};
+}
 
 export default Chatbot;

@@ -4,10 +4,10 @@ import './CategoriesList.scss'; // You can add styles for the categories list in
 function CategoriesList() {
   // Replace this with your actual list of categories
   const categories = [
-    { name: 'Hot Deals', imageSrc: '/categories/offerzone.gif' , url : '/hot-deals' },
-    { name: 'Premium Collections', imageSrc: '/categories/premium.gif',url : '/premium'  },
-    { name: 'Best Seller', imageSrc: '/categories/mostloved.gif',url : '/best-seller'  },
-    { name: 'Buy1 Get1', imageSrc: '/categories/buy1free.gif',url : '/buy1get1'  }
+    { name: 'Hot Deals', imageSrc: '/categories/offerzone-min.gif' , url : '/hot-deals' },
+    { name: 'Premium Collections', imageSrc: '/categories/premium-min.gif',url : '/premium'  },
+    { name: 'Best Seller', imageSrc: '/categories/mostloved-min.gif',url : '/best-seller'  },
+    { name: 'Buy1 Get1', imageSrc: '/categories/buy1free-min.gif',url : '/buy1get1'  }
   ];
 
   return (
