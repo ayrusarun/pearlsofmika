@@ -12,11 +12,11 @@
   .nav {
     position: absolute;
     top: 100%;
-    right: -31.5rem;
+    left: -2.5rem; /* Adjusted from right to left */
     padding: 2.5rem;
     width: 100vw;
     background-color: #fff;
-    z-index: 2000;
+    z-index: 1000;
     .nav-item {
       padding: 1.5rem 0;
       border-bottom: 1px solid var(--border);
@@ -28,7 +28,7 @@
         border-bottom: none;
       }
       a {
-        color: #7d0049;
+        color: var(--primary);
         font-size: 1.6rem;
       }
     }
