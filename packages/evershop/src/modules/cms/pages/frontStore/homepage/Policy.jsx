@@ -31,12 +31,7 @@ export default function Policy() {
   );
 };
 
-export const layout1 = {
+export const layout = {
   areaId: 'content',
   sortOrder: 11
 };
-
-export const layout = {
-    areaId: 'productPageMiddleRight',
-    sortOrder: 22
-  };
