@@ -26,7 +26,7 @@ export default function GeneralInfo({ product }) {
             regular: product.price.regular,
             special: product.price.special
           },
-          sortOrder: 10,
+          sortOrder: 20,
           id: 'productSinglePrice'
         },
         {
@@ -34,7 +34,7 @@ export default function GeneralInfo({ product }) {
           props: {
             sku: product.sku
           },
-          sortOrder: 20,
+          sortOrder: 25,
           id: 'productSingleSku'
         }
       ]}

@@ -81,7 +81,7 @@ export default CouponGrid;
 
 export const layout = {
   areaId: 'productPageMiddleRight',
-  sortOrder: 19
+  sortOrder: 15
 };
 
 

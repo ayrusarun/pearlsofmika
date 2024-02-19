@@ -45,7 +45,7 @@ export const query = `
 
 export const layout = {
   areaId: 'productViewGeneralInfo',
-  sortOrder: 25
+  sortOrder: 30
 };
 
 export default Attributes;

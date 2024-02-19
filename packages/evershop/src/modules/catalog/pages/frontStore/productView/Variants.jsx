@@ -178,7 +178,7 @@ Variants.propTypes = {
 
 export const layout = {
   areaId: 'productPageMiddleRight',
-  sortOrder: 40
+  sortOrder: 20
 };
 
 export const query = `

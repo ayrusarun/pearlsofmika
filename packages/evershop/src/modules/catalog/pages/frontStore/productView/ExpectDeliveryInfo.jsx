@@ -25,5 +25,5 @@ export default ExpectedDeliveryInfo;
 
 export const layout = {
   areaId: 'productPageMiddleRight',
-  sortOrder: 21
+  sortOrder: 35
 };

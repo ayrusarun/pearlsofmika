@@ -14,6 +14,7 @@ export default function Policy() {
 
   return (
     <div className="policies-list">
+      <h6 className="h6 mt-1 text-center ">WHAT WE OFFER</h6>
       <ul className="policy-list">
         {policies.map((policy, index) => (
           <li key={index}>
@@ -32,6 +33,6 @@ export default function Policy() {
 
 export const layout = {
   areaId: 'productPageMiddleRight',
-  sortOrder: 21
+  sortOrder: 40
 };
 

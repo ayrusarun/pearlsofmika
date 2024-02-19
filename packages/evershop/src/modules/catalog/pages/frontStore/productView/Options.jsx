@@ -82,7 +82,7 @@ Options.propTypes = {
 
 export const layout = {
   areaId: 'productPageMiddleRight',
-  sortOrder: 30
+  sortOrder: 25
 };
 
 export const query = `
