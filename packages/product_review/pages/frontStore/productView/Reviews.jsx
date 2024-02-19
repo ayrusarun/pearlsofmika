@@ -88,7 +88,7 @@ Reviews.propTypes = {
 
 
 export const layout = {
-  areaId: 'productPageMiddleRight',
+  areaId: 'productPageMBLeft',
   sortOrder: 55
 };
 

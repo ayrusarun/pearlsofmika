@@ -11,6 +11,19 @@ export default function ProductPageLayout() {
           <Area id="productPageMiddleRight" />
         </div>
       </div>
+
+      <div className="product-page-description page-width">
+        <div className="grid grid-cols-1 gap-3 md:grid-rows-1">
+         <Area id="productPageMiddle" /> 
+        </div>
+      </div>
+      
+      <div className="product-page-MB page-width">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          <Area id="productPageMBLeft" />
+          <Area id="productPageMBRight" />
+        </div>
+      </div>
       <Area id="productPageBottom" className="product-page-top" />
     </div>
   );

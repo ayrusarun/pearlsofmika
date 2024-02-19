@@ -5,16 +5,15 @@ export default function Policy() {
 
   // Replace this with your actual list of categories
   const policies = [
+    { name: 'Fast Delivery', imageSrc: '/policy/delivery.gif' },
     { name: 'Anti-Tarnish', imageSrc: '/policy/tarnish.gif' },
     { name: 'Waterproof', imageSrc: '/policy/drop.gif' },
     { name: 'Free Gifts', imageSrc: '/policy/gift.gif' },
-    { name: 'Fast Delivery', imageSrc: '/policy/delivery.gif' },
     { name: 'Mindfulness consultation', imageSrc: '/policy/affirmation.gif' }
   ];
 
   return (
     <div className="policies-list">
-      <h3 className="h5 mt-1 text-center ">WHY CHOOSE KRYSTALTOUCH?</h3>
       <ul className="policy-list">
         {policies.map((policy, index) => (
           <li key={index}>
@@ -31,12 +30,8 @@ export default function Policy() {
   );
 };
 
-export const layout1 = {
-  areaId: 'content',
-  sortOrder: 11
+export const layout = {
+  areaId: 'productPageMiddleRight',
+  sortOrder: 21
 };
 
-export const layout = {
-    areaId: 'productPageMiddleRight',
-    sortOrder: 22
-  };

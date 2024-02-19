@@ -94,7 +94,7 @@ ReviewForm.propTypes = {
 };
 
 export const layout = {
-  areaId: 'productPageMiddleRight',
+  areaId: 'productPageMBRight',
   sortOrder: 60
 };
 
