@@ -7,6 +7,7 @@ export default function Policy() {
   const policies = [
     { name: 'Anti-Tarnish', imageSrc: '/policy/tarnish.gif' },
     { name: 'Waterproof', imageSrc: '/policy/drop.gif' },
+    { name: 'Nickel Free', imageSrc: '/policy/nickel.gif' },
     { name: 'Free Gifts', imageSrc: '/policy/gift.gif' },
     { name: 'Fast Delivery', imageSrc: '/policy/delivery.gif' },
     { name: 'Mindfulness consultation', imageSrc: '/policy/affirmation.gif' }
