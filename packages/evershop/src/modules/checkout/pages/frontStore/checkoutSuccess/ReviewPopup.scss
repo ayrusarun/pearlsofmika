@@ -43,7 +43,7 @@
   align-items: center;
 
   .review-popup-content {
-    background-color: #7d0049;
+    background-color: var(--primary);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(86, 85, 85, 0.3);
@@ -71,11 +71,11 @@
       border-radius: 4px;
       &.submit-btn {
         background-color: #ffffff;
-        color: #7d0049;
+        color: var(--primary);
       }
       &.close-btn {
         background-color: #ffffff;
-        color: #7d0049;
+        color: var(--primary);
       }
     }
   }

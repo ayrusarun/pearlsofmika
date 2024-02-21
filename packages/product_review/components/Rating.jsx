@@ -11,7 +11,7 @@ function Rating({ rating }) {
           <StartIcon
             width={20}
             height={20}
-            fill={rating > i ? '#7d0049' : '#989898'}
+            fill={rating > i ? 'var(--primary)' : '#989898'}
           />
         ))}
       </div>

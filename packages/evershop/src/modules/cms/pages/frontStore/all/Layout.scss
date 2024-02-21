@@ -1,5 +1,5 @@
 :root {
-  --primary: #7d0049;
+  --primary: #FFCBE9;
   --secondary: #111213;
   --surface: #111213;
   --onSurface: #111213;
@@ -181,7 +181,7 @@ h6 {
 }
 .header {
   color: white;
-  background-color: #7d0049;
+  background-color: var(--primary);
   padding: 2.5rem;
   border-bottom: 1px solid #dcdada;
   margin-bottom: 3rem;
@@ -207,7 +207,7 @@ h6 {
 }
 
 .footer {
-  background-color: #7d0049;
+  background-color: var(--primary);
   margin-top: 9rem;
   padding-top: 1rem;
   padding-block-end: 1rem;
