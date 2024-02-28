@@ -4,7 +4,7 @@ import './Logo.scss';
 
 export default function Logo({
   themeConfig: {
-    logo: { src, alt = 'KrystalTouch', width = '128px', height = '128px' }
+    logo: { src, alt = 'PearlsofMika', width = '128px', height = '128px' }
   }
 }) {
   return (
@@ -57,7 +57,7 @@ Logo.defaultProps = {
   themeConfig: {
     logo: {
       src: '',
-      alt: 'Evershop',
+      alt: 'PearlsofMika',
       width: '128',
       height: '146'
     }

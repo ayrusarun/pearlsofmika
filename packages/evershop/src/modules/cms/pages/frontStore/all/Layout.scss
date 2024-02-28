@@ -1,5 +1,5 @@
 :root {
-  --primary: #7d0049;
+  --primary: #faa6d7;
   --secondary: #111213;
   --surface: #111213;
   --onSurface: #111213;
@@ -17,6 +17,20 @@
   --text: #202223;
   --formFieldBorder: #c9cccf;
   --formFieldBorderShadow: #aeb4b9;
+
+  //MainBanner Text color
+  --mainBannertextColor: #352d2d;
+
+  //Policy ItemName color
+  --policyItemNameColor: black;
+
+  // MobileMenu icon colors
+  --MobileMenu: black;
+  --MobileMenuBackground: white;
+  --MobileMenuItemsColor: black;
+  
+  // UserIcon 
+  --userIconColor: black;
 }
 
 $font-size-sm: 1.4rem;
@@ -180,7 +194,7 @@ h6 {
   min-height: calc(100vh - 50px);
 }
 .header {
-  color: white;
+  color: black;
   background-color: var(--primary);
   padding: 2.5rem;
   border-bottom: 1px solid #dcdada;
@@ -258,7 +272,7 @@ button.outline {
   width: 60px;
   height: 60px;
   bottom: 40px;
-  left: 40px;
+  right: 40px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 10px;
@@ -283,7 +297,7 @@ button.outline {
     width: 60px;
     height: 60px;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     font-size: 30px;
     z-index: 1000;
   }

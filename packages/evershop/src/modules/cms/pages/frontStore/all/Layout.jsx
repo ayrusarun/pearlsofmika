@@ -43,7 +43,7 @@ export default function Layout() {
 
       {/* WhatsApp icon with dynamic message */}
       <a
-        href={`https://wa.me/918940882711?text=${encodedMessage}`}
+        href={`https://wa.me/918903691667?text=${encodedMessage}`}
         className="whatsapp_float" // Using className instead of class for JSX
         target="_blank"
         rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export default function Layout() {
         <i className="fa fa-whatsapp whatsapp-icon" />
       </a>
 
-      <Chatbot /> 
+      {/* <Chatbot />  */}
        
     </>
   );

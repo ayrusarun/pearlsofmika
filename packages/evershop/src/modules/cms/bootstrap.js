@@ -14,7 +14,7 @@ module.exports = () => {
       scripts: [],
       bases: []
     },
-    copyRight: `© 2024 Krystal Touch. All Rights Reserved.`
+    copyRight: `© 2024 PearlsofMika. All Rights Reserved.`
   };
   config.util.setModuleDefaults('themeConfig', themeConfig);
   config.util.setModuleDefaults('system', {

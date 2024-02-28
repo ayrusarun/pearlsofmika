@@ -96,8 +96,8 @@ export default function Layout() {
             </div>
           </div>
           <div className="self-center">
-            <div className="copyright text-center md:text-right text-textSubdued">
-              <span>Copyright © 2020 EverShop</span>
+            <div className="copyright text-center md:text-right">
+              <span>Copyright © 2024 PearlsofMika</span>
             </div>
           </div>
         </div>

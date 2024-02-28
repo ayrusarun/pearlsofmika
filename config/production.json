@@ -3,10 +3,9 @@
     "currency": "INR",
     "language": "en",
     "weightUnit": "kg",
-    "homeUrl": "https://www.krystaltouch.in"
+    "homeUrl": "http://localhost:3000"
   },
   "system": {
-    
     "extensions": [
       {
         "name": "product_review",
@@ -28,10 +27,10 @@
   },
   "themeConfig": {
     "logo": {
-        "alt": "You amazing shop logo",
-        "src": "/logo-kt.png",
-        "width": 50,
-        "height": 50
+        "alt": "PearlsofMika",
+        "src": "/logo.svg",
+        "width": 60,
+        "height": 70
     },
     "headTags": {
       "links": [
@@ -43,12 +42,6 @@
         "metas": [],
         "scripts": []
     },
-    "copyright": "© 2024 AyrusShop. All Rights Reserved."
-  },
-  "google_login": {
-    "client_id": "456482901778-obegr9i481s1blkhtbop8vsoe8vbtkgb.apps.googleusercontent.com",
-    "client_secret": "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",
-    "success_redirect_url": "https://www.krystaltouch.in",
-    "failure_redirect_url": "https://www.krystaltouch.in/account/login"
+    "copyright": "©2024 Pearlsofmika. All Rights Reserved."
   }
 }

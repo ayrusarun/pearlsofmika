@@ -88,7 +88,7 @@ function Footer({ themeConfig: { copyRight } }) {
           </div>
         </div>
         <div className="self-center">
-          <div className="copyright text-center md:text-right text-textSubdued">
+          <div className="copyright text-center md:text-right">
             <span>{copyRight}</span>
           </div>
         </div>
@@ -105,7 +105,7 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
   themeConfig: {
-    copyRight: '© 2024 Krystal Touch. All Rights Reserved.'
+    copyRight: '© 2024 PearlsofMika. All Rights Reserved.'
   }
 };
 
