@@ -6,7 +6,7 @@ import './tailwind.scss';
 
 export default function Layout() {
   // Define your message variable
-  const whatsappMessage = "Hello! I was browsing through Krystal Touch and I need some help!";
+  const whatsappMessage = "Hello! I was browsing through PearlsofMika and I need some help!";
 
   // Encode the message for URL
   const encodedMessage = encodeURIComponent(whatsappMessage);
