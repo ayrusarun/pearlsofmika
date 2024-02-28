@@ -6,7 +6,7 @@ export default function Policy() {
   // Replace this with your actual list of categories
   const policies = [
     { name: 'Fast Delivery', imageSrc: '/policy/delivery.gif' },
-    { name: 'Free Gifts', imageSrc: '/policy/gift.gif' },
+    { name: 'Free Gifts', imageSrc: '/policy/gift.gif' }
   ];
 
   return (
